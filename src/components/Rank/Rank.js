@@ -1,14 +1,14 @@
 import React from 'react';
 // import './ImageLinkForm.css';
 
-const Rank = () => {
+const Rank = ({name, entries}) => {
     return (
         <div>
             <div className='white f3'>
-                {'Hello User, your current rank is...'}
+                {`Hello ${name}, your current rank is...`}
             </div>
             <div className='white f1'>
-                {'#7'}
+                {`#${entries}`}
             </div>
         </div>
     );
