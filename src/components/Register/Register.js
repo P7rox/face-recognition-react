@@ -1,4 +1,5 @@
 import React from 'react';
+import {host} from '../../constants/constants';
 
 class Register extends React.Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class Register extends React.Component {
     }
 
     onSubmitRegister = () => {
-        fetch('http://localhost:3001/register', {
+        fetch(`${host}/register`, {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
